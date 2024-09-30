@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24a2ec;
+    padding: 15px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.home-button {
+    background-color: #FF5A5F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 20px 0;
+}
+
+.game-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.play-button {
+    background-color: #f7a31d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #24a2ec;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#pqp-logo{
+    width: 100px;
+}
+@media (max-width: 768px) {
+    .games {
+        gap: 10px; /* Reduz o espaçamento em telas menores */
+    }
+
+    .game-card {
+        width: 90%; /* Ajusta a largura para ocupar mais espaço */
+        height: auto; /* Deixa a altura automática */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Altera a direção do layout do cabeçalho */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .logo {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+
+    .home-button {
+        width: 100%; /* Botão ocupa toda a largura */
+        text-align: center; /* Alinha texto ao centro */
+    }
+
+    .game-card {
+        width: 100%; /* Ajusta a largura para 100% em telas pequenas */
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem; /* Reduzir padding em telas médias */
+    }
+
+    .games {
+        gap: 1.5rem; /* Reduzir o espaçamento */
+    }
+
+    .game-card {
+        width: calc(50% - 1rem); /* 2 cards em telas médias */
+    }
+}
+
+@media (max-width: 700px) {
+    .games {
+        flex-wrap: wrap; /* Permitir quebra */
+        justify-content: center; /* Centralizar os cards */
+    }
+
+    .game-card {
+        width: calc(50% - 1rem); /* 2 cards por linha */
+        height: auto; /* Altura automática */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem; /* Reduzir padding em telas menores */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Diminuir ainda mais o tamanho da fonte */
+    }
+
+    .home-button {
+        padding: 0.5rem; /* Ajustar padding do botão */
+    }
+
+    .games {
+        gap: 0.5rem; /* Espaçamento muito reduzido */
+    }
+
+    .game-card {
+        width: 100%; /* Card ocupa toda a largura */
+    }
+
+    footer {
+        padding: 0.5rem 0; /* Reduzir padding no footer */
+    }
+    .home-button {
+        background-color: #FF5A5F;
+        color: white;
+        padding: 0.5rem 1rem; /* Ajustar padding */
+        text-decoration: none;
+        border-radius: 5px;
+        max-width: 200px; /* Largura máxima */
+        width: auto; /* Ajuste automático */
+        text-align: center; /* Alinha o texto ao centro */
+        flex-shrink: 0; /* Não permite que o botão encolha */
+    }
+}
